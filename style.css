@@ -1,11 +1,11 @@
 @font-face {
     font-family: '草书';
-    src: url('YeZiGongChangZuiHanJiangXingCao-2.ttf') format('truetype');
+    src: url('https://linxiawmt.github.io/YeZiGongChangZuiHanJiangXingCao-2.ttf') format('truetype');
 }
 
 @font-face {
     font-family: '结尾';
-    src: url('No.341-ShangShouSaTi-2.ttf') format('truetype');
+    src: url('https://linxiawmt.github.io/No.341-ShangShouSaTi-2.ttf') format('truetype');
 }
 
 body {
@@ -74,7 +74,7 @@ h1, h3 {
 }
 
 .author {
-    background-image: url('0df7l835.png');
+    background-image: url('https://linxiawmt.github.io/0df7l835.png');
     text-align: center;
     font-family: '结尾', sans-serif;
     font-style: italic;
@@ -164,7 +164,7 @@ p.ball {
     width:100px;
     height:100px;
     border-radius:50%;
-    background-image:url('5aa3db0fdb9abe17c74227ef4156b66\(1\).jpg');
+    background-image:url('https://linxiawmt.github.io/5aa3db0fdb9abe17c74227ef4156b66\(1\).jpg');
     animation:bounce 1.5s infinite alternate;
     animation-timing-function:linear;
 }
