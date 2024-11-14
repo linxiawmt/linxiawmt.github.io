@@ -1,0 +1,205 @@
+@font-face {
+    font-family: '草书';
+    src: url('YeZiGongChangZuiHanJiangXingCao-2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '结尾';
+    src: url('No.341-ShangShouSaTi-2.ttf') format('truetype');
+}
+
+body {
+    font-family: '草书', sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+}
+
+p {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.standout {
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.intro {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover, a:active, a:focus {
+    color: red;
+}
+
+ul li:nth-child(even) {
+    background: lightgray;
+}
+
+ul li:nth-child(odd) {
+    background: lightcyan;
+}
+
+.author1 {
+    color: white;
+    background: orangered;
+    padding: 5px;
+}
+
+.wrapper {
+    background: radial-gradient(circle at top left, rgb(245, 243, 243), rgb(132, 128, 156), rgb(211, 62, 62));
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+h1, h3 {
+    vertical-align: middle;
+    font-size: 30px;
+    text-align: center;
+}
+
+.author {
+    background-image: url('0df7l835.png');
+    text-align: center;
+    font-family: '结尾', sans-serif;
+    font-style: italic;
+    text-shadow: 0px 0px 0px;
+    font-weight: lighter;
+    font-size: 25px;
+    word-spacing: 0.2em;
+    padding:20px;
+}
+aside{
+    width:400px;
+    height:200px;
+    margin:auto;
+    padding:10px;
+    border:2px;
+    border-color:rgba(red, green, blue, alpha);
+    border-style:solid;
+}
+.overlay{
+    position:sticky;
+    top:0%;
+    z-index: 1000;
+    background:radial-gradient(circle at top left, rgb(165, 54, 54), rgb(75, 59, 171), rgb(155, 13, 13));
+    text-align: center;
+    padding:2px;
+    animation:switch 1s infinite;
+}
+@keyframes switch{
+    0%{
+        background:radial-gradient(circle at top left, rgb(165, 54, 54), rgb(75, 59, 171), rgb(155, 13, 13));
+        border-radius: 0%;
+    }
+    25%{
+        background:radial-gradient(circle at bottom, rgb(165, 54, 54), rgb(75, 59, 171), rgb(155, 13, 13));
+        border-radius: 25%;
+    }
+    50%{
+        background:radial-gradient(circle at center, rgb(165, 54, 54), rgb(75, 59, 171), rgb(155, 13, 13));
+        border-radius:50%;
+    }
+    75%{
+        background:radial-gradient(circle at left, rgb(165, 54, 54), rgb(75, 59, 171), rgb(155, 13, 13));
+    }
+    100%{
+        background:radial-gradient(circle at right, rgb(165, 54, 54), rgb(75, 59, 171), rgb(155, 13, 13));
+    }
+}
+a.button {
+    background: radial-gradient(ellipse at center, rgb(178, 120, 120), rgb(180, 23, 23));
+    border-radius: 60px;
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    max-width: 150px;
+    padding:15px;
+    margin: auto;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    transition:transform 1s linear;
+    animation:dance 1s infinite;
+}
+a.button:hover {
+    background: radial-gradient(ellipse at center, rgb(104, 198, 184), rgb(122, 117, 192));
+    color: yellow; /* 当鼠标悬停时改变文字颜色 */
+    transform: scale(1.1); /* rotate(45deg); /* 鼠标悬停时轻微放大 */
+    transform: rotate(5deg);
+}
+
+@keyframes dance {
+    0%{
+        border-radius:60px;
+    }
+    25%{
+        border-radius:50%;
+    }
+    50%{
+        border-radius:0%;
+    }
+    75%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius:60px;
+    }
+}
+p.ball {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-image:url('5aa3db0fdb9abe17c74227ef4156b66\(1\).jpg');
+    animation:bounce 1.5s infinite alternate;
+    animation-timing-function:linear;
+}
+@keyframes bounce {
+    0%{
+        transform:translate(0px,10px);
+    }
+    10%{
+        transform:translate(100px,-100px);
+    }
+    20%{
+        transform:translate(200px,10px);
+    }
+    30%{
+        transform:translate(400px,-10px);
+    }
+    40%{
+        transform:translate(600px,10px);
+    }
+    50%{
+        transform:translate(800px,-10px);
+    }
+    60%{
+        transform:translate(1000px,10px);
+    }
+    70%{
+        transform:translate(1200px,-10px);
+    }
+    80%{
+        transform:translate(1400px,10px);
+    }
+    90%{
+        transform:translate(1600px,-100px);
+    }
+    100%{
+        transform:translate(1800px,10px);
+    }
+}
